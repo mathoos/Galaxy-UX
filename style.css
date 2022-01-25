@@ -39,11 +39,17 @@ section:nth-child(1){
     font-weight: bolder;
     width: 100%;
     height: 55%;
+    overflow: hidden;
 }
 #sous-titre p{
     width: 90%;
     letter-spacing: 1px;
+    transform: translateY(110%);
+    animation: slide .5s ease forwards;
 }
+
+
+
 
 /* BOUTON */
 
@@ -78,7 +84,19 @@ section:nth-child(2){
 
 /* Cards */
 
-
+.prout{
+    overflow: hidden;  
+}
+#card, #card2, #card3{
+    transform: translateY(-100%);
+    animation: slide .5s ease .4s forwards;
+}
+#card2{
+    animation: slide .5s ease .6s forwards;
+}
+#card3{
+    animation: slide .7s ease .8s forwards;
+}
 .drop{
     width: 100%;
     height: 4.8em;
@@ -86,7 +104,10 @@ section:nth-child(2){
     transition: .5s ease;
     border-radius: 10px;
     border: solid black 1px;
+    box-sizing: border-box;
     overflow: hidden;
+    opacity: 0;
+    
    
 }
 
@@ -158,4 +179,14 @@ section:nth-child(2){
     height: 100%;
     border-top: solid 1px grey;
     box-sizing: border-box;
+}
+
+
+
+
+@keyframes slide{
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
