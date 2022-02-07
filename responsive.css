@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: visible;
+}
+p{
+    margin: 0;
+}
+section:nth-child(1){
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+#titre{
+    font-size: 1.2em;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+#sous-titre{
+    height: auto;
+    font-size: 2em;
+}
+
+/* BOUTON */
+
+#bouton{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#bouton button{
+    width: 250px;
+    height: 70px;
+    border: black solid 2px;
+    outline: none;
+    box-shadow: 5px 5px 1px black;
+    transition: .5s ease;
+    font-size: 1.5em;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#bouton button:hover{
+    box-shadow : none;
+}
+
+
+section:nth-child(2){
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+/* Cards */
+
+
+.numero{
+    font-size: 1em;
+}
+.titre{
+    font-size: .8em;
+    width: calc(100% - (7% + 30px));
+}
+.title button{
+    width:  30px;
+    height: 30px;
+}
+
+.descri p{
+    font-size: .7em;
+}

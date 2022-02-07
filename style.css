@@ -17,10 +17,6 @@ section{
     height: 100%;
     box-sizing: border-box;
 }
-section:nth-child(1){
-    background-color: transparent;
-}
-
 #titre{
     display: flex;
     align-items: center;
@@ -69,6 +65,7 @@ section:nth-child(1){
     transition: .5s ease;
     font-size: 1.5em;
     font-weight: bolder;
+    cursor: pointer;
 }
 #bouton button:hover{
     box-shadow : none;
@@ -84,8 +81,8 @@ section:nth-child(2){
 
 /* Cards */
 
-.prout{
-    overflow: hidden;  
+.hide{
+    overflow: hidden; 
 }
 #card, #card2, #card3{
     transform: translateY(-100%);
@@ -175,11 +172,15 @@ section:nth-child(2){
     
 }
 .descri{
+    display: flex;
+    align-items: center;
     width: 90%;
     height: 100%;
     border-top: solid 1px grey;
     box-sizing: border-box;
+    text-align: justify;
 }
+
 
 
 
